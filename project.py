@@ -58,7 +58,7 @@ class LibraryManagementSystem:
 
         # Create the GUI elements
         self.create_widgets()
-
+#function to create interactive widget
     def create_widgets(self):
         # Create frames for organization
         self.frame1 = ttk.LabelFrame(self.root, text="Add Book", padding=(20, 10))
