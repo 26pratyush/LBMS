@@ -139,6 +139,7 @@ class LibraryManagementSystem:
         user_id = self.user_id_entry.get()
         isbn = self.book_isbn_borrow_entry.get()
 
+        
         if user_id and isbn:
             if isbn in self.books:
                 book = self.books[isbn]
