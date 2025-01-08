@@ -105,4 +105,25 @@ Methods:
     return_book(book): Allows the user to return a borrowed book. Resets the book's availability and due date, and removes it from the user's borrowed books list.     Returns True if successful, otherwise False.
     check_overdue_books(): Returns a list of books borrowed by the user that are overdue (past their due date).
 
+3. LibraryManagementSystem Class
+   
+The LibraryManagementSystem class represents the main library system, including its GUI and core functionality.
+
+Attributes:
+
+    root: The root window for the Tkinter GUI.
+    books: A dictionary to store books, with the ISBN as the key and Book objects as the value.
+    users: A dictionary to store users, with the user ID as the key and User objects as the value.
+
+Methods:
+
+    __init__(root): Initializes the library management system with the root window and GUI elements.
+    create_widgets(): Creates and organizes the GUI widgets into labeled frames.
+    add_book(): Adds a new book to the system. Retrieves input from the GUI, creates a Book object, and stores it in the books dictionary.
+    borrow_book(): Allows a user to borrow a book. Retrieves user ID and ISBN from the GUI, validates them, and updates the book and user records accordingly.
+    return_book(): Allows a user to return a borrowed book. Retrieves the ISBN from the GUI and updates the book and user records.
+    search_book(): Searches for books by title, author, or ISBN. Displays the results in a message box.
+    view_user_records(): Displays all user records, including borrowed and overdue books, in a message box.
+
+
 
