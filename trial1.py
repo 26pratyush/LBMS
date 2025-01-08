@@ -3,7 +3,8 @@ from tkinter import messagebox
 from tkinter import ttk
 from datetime import datetime, timedelta
 
-# Class to represent a Book
+
+#   Class to represent a Book
 class Book:
     def __init__(self, title, author, isbn, available=True):
         self.title = title
@@ -11,6 +12,7 @@ class Book:
         self.isbn = isbn
         self.available = available
         self.due_date = None
+
 
 # Class to represent a User
 class User:
