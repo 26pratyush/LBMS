@@ -172,7 +172,7 @@ class LibraryManagementSystem:
                 messagebox.showerror("Error", "Book not found.")
         else:
             messagebox.showerror("Error", "Please enter a book ISBN.")
-
+# search logic implemented
     def search_book(self):
         search_term = self.search_book_entry.get().lower()
         search_results = []
@@ -185,7 +185,7 @@ class LibraryManagementSystem:
             messagebox.showinfo("Search Results", result_text)
         else:
             messagebox.showinfo("Search Results", "No books found.")
-
+# user borrow history function implemented
     def view_user_records(self):
         user_records = []
         for user in self.users.values():
