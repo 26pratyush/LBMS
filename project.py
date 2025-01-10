@@ -123,7 +123,7 @@ class LibraryManagementSystem:
         # Manage User Records Section
         self.view_user_button = ttk.Button(self.frame5, text="View User Records", command=self.view_user_records)
         self.view_user_button.grid(row=0, column=0, columnspan=2, pady=10)
-
+# add book function logic
     def add_book(self):
         title = self.book_title_entry.get()
         author = self.book_author_entry.get()
