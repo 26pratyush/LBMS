@@ -135,7 +135,7 @@ class LibraryManagementSystem:
             messagebox.showinfo("Success", f"Book '{title}' added successfully.")
         else:
             messagebox.showerror("Error", "Please fill in all fields.")
-
+# added borrow book feature
     def borrow_book(self):
         user_id = self.user_id_entry.get()
         isbn = self.book_isbn_borrow_entry.get()
